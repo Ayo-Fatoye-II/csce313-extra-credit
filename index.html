@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,99 @@
     <link rel="stylesheet" href="styles.css">
     <title>System Programming in Rust</title>
 </head>
+
 <body>
     <header>
         <img class="logo" src="TAM-LogoBox.svg" alt="Texas A&M University's Logo" />
         <h1 class="head-text">So you want to learn about Rust?!</h1>
         <footer>
-            An essay by Bella Woliver, Ayomide Fatoye, and Prithvi Patel
+            A paper by Bella Woliver, Ayomide Fatoye, and Prithvi Patel
         </footer>
     </header>
     <main>
         <section>
             <h2>Introduction</h2>
-            <p>Developed by Mozilla in 2010, Rust is a modern programming language designed to provide memory safety and high performance while allowing for systems-level programming. The language has since gone on to gain popularity among developers for its focus on safety, performance, and concurrency. In this essay, we will highlight key features of Rust that make it a good alternative to languages like C or C++, as well as discuss some of its most useful utilizations.</p>
+            <p>Developed by Mozilla in 2010, Rust is a modern programming language designed to provide memory safety and
+                high performance while allowing for systems-level programming. The language has since gone on to gain
+                popularity among developers for its focus on safety, performance, and concurrency. In this essay, we
+                will highlight key features of Rust that make it a good alternative to languages like C or C++, as well
+                as discuss some of its most useful utilizations.</p>
         </section>
         <section>
             <h2>What is Rust and Why is it Useful?</h2>
-            <p>Rust is a statically typed, compiled language that focuses on providing memory safety guarantees without a garbage collector, making it a desirable option for system programming. Its syntax and semantics are influenced by languages like C++, but it introduces novel concepts to ensure memory safety and ease of use. Rust is designed to help developers write safe, concurrent, and high-performance code with fewer bugs, making it a powerful tool for building everything from operating systems to web applications.</p>
+            <p>Rust is a statically typed, compiled language that focuses on providing memory safety guarantees without
+                a garbage collector, making it a desirable option for system programming. Its syntax and semantics are
+                influenced by languages like C++, but it introduces novel concepts to ensure memory safety and ease of
+                use. Rust is designed to help developers write safe, concurrent, and high-performance code with fewer
+                bugs, making it a powerful tool for building everything from operating systems to web applications.</p>
         </section>
         <section>
             <h2>What is System Programming and Why is it Useful?</h2>
-            <p>System programming is a subfield of computer programming that deals with the design and implementation of low-level software that interacts directly with computer hardware. It includes tasks such as writing operating systems, device drivers, and embedded systems, which require precise control over system resources like memory and processor time. System programming is essential because it provides the foundation for all other software to run efficiently and securely on a computer. As a result, system programmers require a deep understanding of how computer hardware works and the ability to work with low-level programming languages like C, C++, and assembly.</p>
+            <p>System programming is a subfield of computer programming that deals with the design and implementation of
+                low-level software that interacts directly with computer hardware. It includes tasks such as writing
+                operating systems, device drivers, and embedded systems, which require precise control over system
+                resources like memory and processor time. System programming is essential because it provides the
+                foundation for all other software to run efficiently and securely on a computer. As a result, system
+                programmers require a deep understanding of how computer hardware works and the ability to work with
+                low-level programming languages like C, C++, and assembly.</p>
         </section>
         <section>
             <h2>Memory Safety with Rust</h2>
-            <p>Memory safety is a property of programming languages that prevents programs from accessing memory in an unintended or unauthorized way. This is important because memory-related bugs, such as buffer overflows, use-after-free, and data races, can lead to crashes, security vulnerabilities, and other undesirable behavior. Rust provides memory safety through a combination of static checks and a unique ownership system that eliminates many common memory safety issues without the need for a garbage collector.</p>
+            <p>Memory safety is a property of programming languages that prevents programs from accessing memory in an
+                unintended or unauthorized way. This is important because memory-related bugs, such as buffer overflows,
+                use-after-free, and data races, can lead to crashes, security vulnerabilities, and other undesirable
+                behavior. Rust provides memory safety through a combination of static checks and a unique ownership
+                system that eliminates many common memory safety issues without the need for a garbage collector.</p>
         </section>
         <section>
             <h2>Why Memory Safety is Important</h2>
-            <p>Memory safety is crucial in system programming because it helps prevent bugs that can compromise the entire system. For example, memory leaks can lead to performance degradation, while buffer overflows can expose sensitive information or allow attackers to execute arbitrary code. By enforcing memory safety, Rust can help developers build more reliable and secure systems without the need for manual memory management, reducing the likelihood of memory-related errors and improving overall software quality.</p>
+            <p>Memory safety is crucial in system programming because it helps prevent bugs that can compromise the
+                entire system. For example, memory leaks can lead to performance degradation, while buffer overflows can
+                expose sensitive information or allow attackers to execute arbitrary code. By enforcing memory safety,
+                Rust can help developers build more reliable and secure systems without the need for manual memory
+                management, reducing the likelihood of memory-related errors and improving overall software quality.</p>
+        </section>
+        <section>
+            <h2>Rust's Relationship with Low-Level Control and Why That’s Really Really Cool</h2>
+            <p>One of Rust's primary advantages is its ability to provide low-level control over system resources while
+                maintaining a high level of abstraction and safety. This is achieved through its unique ownership
+                system, which allows developers to manage memory explicitly without the risk of common memory bugs.
+                Rust's ownership system, combined with its zero-cost abstractions, ensures that the code is both safe
+                and efficient.</p>
+            <p>Rust's low-level control is particularly attractive for system programming because it allows developers
+                to optimize their code for performance and resource usage. For example, Rust allows precise control over
+                memory allocation, concurrency, and data representation, which can be critical when working with limited
+                resources or when performance is a top priority.</p>
+            <p>Additionally, Rust's strong type system and static checks help catch many errors at compile time,
+                reducing the need for runtime checks and improving overall performance. This combination of safety,
+                performance, and control makes Rust an excellent choice for system programming tasks where low-level
+                control is essential, and memory safety is critical.</p>
+        </section>
+        <section>
+            <h2>Concurrency in Rust</h2>
+            <p>Concurrency is another feature where Rust shines. The language's focus on safety extends to concurrent
+                programming, enabling developers to write parallel code without the fear of data races or other
+                concurrency-related bugs. Rust's concurrency model relies on concepts like threads, mutexes, channels,
+                and atomic operations to ensure that concurrent code is both efficient and safe.</p>
+            <p>Rust's approach to concurrency is based on its ownership system, which helps to prevent data races by
+                design. The language enforces strict rules about how and when data can be accessed or mutated, which
+                makes it much easier for developers to reason about the potential issues in concurrent code. This also
+                means that Rust can provide powerful concurrency primitives that are easier to use correctly compared to
+                those in other languages, such as C++.</p>
+        </section>
+        <section>
+            <h2>Why Rust's Concurrency Model is Important</h2>
+            <p>Concurrency is a crucial aspect of modern software development, as it allows programs to take advantage
+                of multi-core processors and efficiently handle multiple tasks at once. In system programming,
+                concurrency can help improve performance, responsiveness, and resource utilization. However, concurrent
+                programming can be challenging, and it is often error-prone due to the inherent complexities of managing
+                shared resources and synchronizing threads.</p>
+            <p>Rust's focus on safe concurrency can significantly reduce the risk of concurrency-related bugs, making it
+                easier for developers to write reliable, high-performance concurrent code. By providing powerful
+                concurrency primitives and preventing data races through its ownership system, Rust enables developers
+                to create concurrent software without the same level of risk associated with other languages.</p>
         </section>
     </main>
 </body>
+
 </html>
