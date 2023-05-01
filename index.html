@@ -18,6 +18,8 @@
         </footer>
     </header>
     <main>
+
+
         <section>
             <h2>Introduction</h2>
             <p>Developed by Mozilla in 2010, Rust is a modern programming language designed to provide memory safety and
@@ -76,6 +78,10 @@
                 performance, and control makes Rust an excellent choice for system programming tasks where low-level
                 control is essential, and memory safety is critical.</p>
         </section>
+
+
+
+
         <section>
             <h2>Concurrency in Rust</h2>
             <p>Concurrency is another feature where Rust shines. The language's focus on safety extends to concurrent
@@ -100,6 +106,147 @@
                 concurrency primitives and preventing data races through its ownership system, Rust enables developers
                 to create concurrent software without the same level of risk associated with other languages.</p>
         </section>
+
+        <section>
+            <h2>Zero-Cost Abstractions</h2>
+            <p>One of the most important benefits of Rust as a system programming language is its ability to provide
+                high-level abstractions without incurring any runtime overhead. This concept is referred to as zero-cost
+                abstraction, or the ability of a language to support high-level constructs with 'zero cost' on the
+                code's performance.</p>
+            <p>Zero-cost abstractions is a fundamental concept in Rust programming that contributes to the language's
+                success as a systems programming language. These abstractions allow programmers to write code in
+                high-level constructs that are just as performant as their intricate, low-level counterparts. This is
+                particularly important for writing programs that interact with the computer's hardware directly, like
+                system programming. System-level code often requires low-level access to hardware and system resources,
+                which can be both complex and time-consuming to implement. Many of these issues are circumvented with
+                zero-cost abstractions; developers can write code that is both high-level and efficient, without having
+                to resort to manual memory management or other performance optimizations. This makes it easier to
+                develop complex, high-performance systems that are both safe and reliable.</p>
+            <p>This topic is particularly relevant to Rust as it is one of the language's defining features. Rust's
+                ownership and borrowing system, for example, allow for zero-cost abstractions by enforcing strict rules
+                on how memory is accessed and manipulated. This ensures that high-level abstractions can be used without
+                incurring any overhead because the compiler can optimize the code to be as efficient as possible.
+                Additionally, Rust's support for low-level programming constructs such as pointers and unsafe code
+                allows for even more control over performance, while still maintaining the safety and reliability of the
+                language. Rust's approach to zero-cost abstractions allows programmers to write code that is both safe
+                and efficient in a more understandable manner.</p>
+        </section>
+        <section>
+            <h2>Interoperability</h2>
+            <p>Interoperability is a critical concept in system programming as it enables different systems and programs
+                to work together seamlessly. This concept is heavily integrated in Rust's design philosophy, which makes
+                it an ideal choice for developing complex systems that require interaction with other software
+                components.</p>
+            <p>Rust is designed to integrate seamlessly with other programming languages, such as C and C++, and
+                supports various application binary interface (ABI) formats. Rust also provides features in a Foreign
+                Function Interface (FFI) that enable it to interoperate with other languages by exposing Rust functions
+                as C-compatible interfaces. Rust's interoperability features are especially important in system
+                programming, as they enable developers to interact with low-level hardware and operating system
+                components while maintaining the performance and safety benefits of the language. </p>
+            <p>Interoperability is especially useful in system programming because it often requires a high degree of
+                precision and control to work with low-level hardware and operating system interfaces. Because high
+                levels of precision and control are often unachievable with the abstraction that Rust provides, it can
+                be more beneficial to use multiple software components, libraries, and hardware devices. Rust was
+                designed with these needs in mind, so many features of the language involve an easy integration with
+                other common system programming language features, like C or C++ . This allows developers to take
+                advantage of existing software components or services, rather than having to build everything from
+                scratch. This saves time, reduces costs, and improves software quality by ensuring that each component
+                can be optimized for its specific purpose.</p>
+        </section>
+        <section>
+            <h2>Rust's Package Management System</h2>
+            <p>Package management is another important aspect of software development that involves managing
+                dependencies, libraries, and other components needed for a project. It simplifies the software building
+                process, reduces errors, and enables code sharing and collaboration. Rust handles package management by
+                the Cargo package manager, which simplifies building and managing dependencies for Rust projects. It is
+                used to resolve conflicts, serves as a form of version control, and ensures compatibility with other
+                programming languages.</p>
+            <p>Package management is particularly important in system programming due to the complex and low-level
+                nature of the tasks involved. This complexity can be very challenging to handle for system programming,
+                but Rust's package management system simplifies this process expertly. Overall, package management is a
+                crucial aspect of software development, and Rust's Cargo package manager provides a streamlined solution
+                for managing dependencies in Rust projects.</p>
+         </section>
+
+         <section>
+            <h2>Applications of Rust</h2>
+
+            <p>
+                The applications of Rust are another important area to address regarding Rust and its capabilities. The unique 
+                feature set and focus on safety, reliability, and performance have allowed Rust to become extremely prominent in the systems 
+                programming space, and as a result, opened the door for its application in a variety of areas in computing.
+            </p>
+
+            <p>
+                Redox, introduced in 2016, is one such application of the language that helps demonstrate where Rust shines. Redox is a Unix-like 
+                operating system written completely in Rust, and it's open-source. Strong safety guarantees while providing low-level control are imperative 
+                for operating system development, and Rust provides both, which made it the optimal choice when developing Redox as its focus
+                is on stability and security. The Redox operating system features a microkernel architecture design, which results in the core kernel 
+                components having a smaller footprint and more basic functionality compared to something like the Linux monolithic kernel. This design, 
+                along with the usage of Rust and its focus on safety, reliability, and performance, enhance the security and maintainability of the system, 
+                and provide a more basic functionality compared to the Linux monolithic kernel. Through the usage of Rust when developing the 
+                operating system, the developers were able to create an operating system that is more resilient against bugs, easier to maintain, 
+                and better suited to modern hardware and software demands.
+            </p>
+
+            <p>
+                Rust is also popular in the web development space. Through the usage of WebAssembly which is a binary instruction format 
+                designed for the compilation of languages such as Rust, developers have been able to use Rust for their full stack code. This has 
+                allowed Rust to gain prominence by allowing the code to run at a near-native speed and allowing its usage in areas that are dominated
+                by other languages.
+            </p>
+
+            <p>
+                The rapidly increasing adoption of Rust in various systems programming applications is a 
+                testament to its versatility and potential to revolutionize systems programming and software engineering in general.
+            </p>
+
+            <p>
+                https://www.redox-os.org/<br>
+                https://news.itsfoss.com/redox-os-0-7-0-release/<br>
+                https://thenewstack.io/what-is-webassembly/<br>
+            </p>
+         </section>
+
+         <section>
+            <h2>Learning Rust</h2>
+
+            <p>
+                While the technicalities and features of Rust are important to address in regards to its popularity in systems programming, it's
+                also important to provide guidance on how one might learn Rust. There are many resources to get started with learning Rust, and the 
+                first one people will probably suggest is to visit the official Rust website: https://www.rust-lang.org/, where almost any information
+                regarding Rust can be found.
+            </p>
+                
+            <p>
+                The Rust documentation is a great place to begin one's journey in learning the Rust programming language. The official 
+                Rust documentation, particularly "The Rust Programming Language" book, offers a comprehensive guide that 
+                covers fundamental concepts, syntax, and more advanced features of the language such as ownership and borrowing. This resource 
+                is designed to cater to all types of learners regardless of their experience by providing clear explanations and practical examples
+                to learn from. By utilizing the Rust documentation directly, one can take advantage of the most up-to-date and reliable 
+                information regarding Rust, as it is maintained and updated by the language's developers and community members. The Rust documentation 
+                complements other learning resources such as video tutorials too, giving you a solid foundation and deep understanding of the language. 
+                As one progresses through the documentation, they can acquire the knowledge and confidence needed to tackle their own real-world projects using Rust.
+            </p>
+                
+            <p>
+                Learning Rust by example is another highly effective approach that combines working on your projects, contributing to open-source 
+                Rust projects, and watching tutorial videos to learn. This method allows you to gain practical experience and see how Rust 
+                can be applied in actual computing scenarios. By creating your projects, you can apply the concepts learned from the Rust 
+                documentation, tutorials, and open-source projects to reinforce your understanding and build your problem-solving skills. 
+                Working with open-source Rust projects exposes you to various programming styles, best practices, and use cases, while 
+                contributing to these projects can help one become an active member of the Rust community which thrives off collaboration. 
+                Tutorial videos can also complement one's learning process by offering demonstrations, advice, and guidance from experienced 
+                Rust developers. By combining these resources, one can tailor a well-rounded, immersive learning experience that will accelerate
+                their journey towards developing a deep understanding of Rust, and enable themselves to tackle complex projects with confidence.
+            </p>
+
+            <p>
+                https://www.rust-lang.org/learn
+            </p>
+         </section>
+
+
         <section>
             <h2>Additional References</h2>
             <ul>
